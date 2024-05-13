@@ -1,0 +1,17 @@
+version: '4.30.0'
+
+services:
+  postgres:
+    container_name: postgres_docker
+    image: postgres
+    environment:
+      POSTGRES_USER: exampleDocker
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: exampleDocker
+      PGDATA: /data/postgres
+    volumes:
+      - db_data:/var/;lib/postgresql
+    ports:
+      - "5439:5432"
+volumes:
+  db_data: {}

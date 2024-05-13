@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5439/exampleDocker
+    username: exampleDocker
+    password: password
+    driver-class-name: org.postgresql.Driver
